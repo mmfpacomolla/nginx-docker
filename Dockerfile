@@ -1,5 +1,4 @@
 #Imagen base
-#FROM php:fpm
 FROM debian
 
 #Actualizaciones + instalación de VIM + instalación del servidor web NGINX
