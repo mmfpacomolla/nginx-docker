@@ -1,6 +1,8 @@
 #Imagen base
 FROM debian
 
+LABEL org.opencontainers.image.authors="miguelmira.informatica@iespacomolla.es"
+
 #Actualizaciones + instalación de VIM + instalación del servidor web NGINX + PHP
 RUN apt update && \
     apt install -y vim && \
