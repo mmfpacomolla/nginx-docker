@@ -1,7 +1,7 @@
 #Imagen base
 FROM debian
 
-#Actualizaciones + instalación de VIM + instalación del servidor web NGINX
+#Actualizaciones + instalación de VIM + instalación del servidor web NGINX + PHP
 RUN apt update && \
     apt install -y vim && \
     apt install -y nginx && \
