@@ -19,5 +19,5 @@ RUN ln -s /etc/nginx/sites-available/web1.com /etc/nginx/sites-enabled/
 #Expongo el puerto de NGINX
 EXPOSE 80
 
-#Habilito nginx para que cada vez que el contenedor se inicie, NGINX se inicie también
+#Habilito php-fpm y nginx para que arranque cada vez que el contenedor se inicie
 ENTRYPOINT ["/bin/bash", "-c", "php-fpm8.2; nginx -g 'daemon off;' "]
